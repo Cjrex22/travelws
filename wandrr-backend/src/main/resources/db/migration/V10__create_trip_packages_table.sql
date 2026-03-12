@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS trip_packages (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    name VARCHAR(200) NOT NULL,
+    destination VARCHAR(200) NOT NULL,
+    country VARCHAR(100),
+    duration_days INTEGER NOT NULL,
+    price_per_person INTEGER NOT NULL,
+    description TEXT,
+    photo_url VARCHAR(1000),
+    highlights TEXT,
+    inclusions TEXT,
+    exclusions TEXT,
+    itinerary_json TEXT,
+    photos_json TEXT,
+    rating DECIMAL(3,1) DEFAULT 4.5,
+    review_count INTEGER DEFAULT 0,
+    category VARCHAR(50),
+    is_featured BOOLEAN NOT NULL DEFAULT FALSE,
+    created_at TIMESTAMP NOT NULL DEFAULT now()
+);

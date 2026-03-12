@@ -1,0 +1,2073 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.wandrr:wandrr-backend >----------------------
+[INFO] Building wandrr-backend 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.5:run (default-cli) > test-compile @ wandrr-backend >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ wandrr-backend ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] Copying 8 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ wandrr-backend ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ wandrr-backend ---
+[INFO] skip non existing resourceDirectory /Users/adityatati/Desktop/travelws/wandrr-backend/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ wandrr-backend ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.2.5:run (default-cli) < test-compile @ wandrr-backend <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.5:run (default-cli) @ wandrr-backend ---
+[INFO] Attaching agents: []
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-03-11T09:34:17.047+05:30  INFO 10282 --- [wandrr-backend] [           main] com.wandrr.WandrrApplication             : Starting WandrrApplication using Java 25.0.1 with PID 10282 (/Users/adityatati/Desktop/travelws/wandrr-backend/target/classes started by adityatati in /Users/adityatati/Desktop/travelws/wandrr-backend)
+2026-03-11T09:34:17.047+05:30  INFO 10282 --- [wandrr-backend] [           main] com.wandrr.WandrrApplication             : The following 1 profile is active: "dev"
+2026-03-11T09:34:17.278+05:30  INFO 10282 --- [wandrr-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-03-11T09:34:17.279+05:30  INFO 10282 --- [wandrr-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11T09:34:17.327+05:30  INFO 10282 --- [wandrr-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 9 JPA repository interfaces.
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/Users/adityatati/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.20/tomcat-embed-core-10.1.20.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2026-03-11T09:34:17.501+05:30  INFO 10282 --- [wandrr-backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-11T09:34:17.505+05:30  INFO 10282 --- [wandrr-backend] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-11T09:34:17.505+05:30  INFO 10282 --- [wandrr-backend] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-03-11T09:34:17.527+05:30  INFO 10282 --- [wandrr-backend] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-11T09:34:17.528+05:30  INFO 10282 --- [wandrr-backend] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 466 ms
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2026-03-11T09:34:17.538+05:30  INFO 10282 --- [wandrr-backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-11T09:34:17.596+05:30  INFO 10282 --- [wandrr-backend] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:wandrrdb user=SA
+2026-03-11T09:34:17.597+05:30  INFO 10282 --- [wandrr-backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-11T09:34:17.600+05:30  INFO 10282 --- [wandrr-backend] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:wandrrdb'
+2026-03-11T09:34:17.641+05:30  INFO 10282 --- [wandrr-backend] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-11T09:34:17.665+05:30  INFO 10282 --- [wandrr-backend] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-03-11T09:34:17.676+05:30  INFO 10282 --- [wandrr-backend] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-11T09:34:17.744+05:30  INFO 10282 --- [wandrr-backend] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-11T09:34:17.758+05:30  WARN 10282 --- [wandrr-backend] [           main] org.hibernate.dialect.Dialect            : HHH000511: The 2.2.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+2026-03-11T09:34:17.760+05:30  WARN 10282 --- [wandrr-backend] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-11T09:34:18.088+05:30  INFO 10282 --- [wandrr-backend] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    alter table if exists app_content 
+       drop constraint if exists FKpm2mf7c4olhq77s788rrwdoeh
+Hibernate: 
+    alter table if exists expense_splits 
+       drop constraint if exists FKqigr3qe91wgifpl6mak0xcdso
+Hibernate: 
+    alter table if exists expense_splits 
+       drop constraint if exists FKnikv7drxxkj9x862du3r4ruam
+Hibernate: 
+    alter table if exists expenses 
+       drop constraint if exists FKiwqbj8x69qhvj7a41f5r3xy10
+Hibernate: 
+    alter table if exists expenses 
+       drop constraint if exists FK9twvm79qw1voae3xgtn1xq5y9
+Hibernate: 
+    alter table if exists gallery_photos 
+       drop constraint if exists FK36bnykhsad099re6emt3umv4
+Hibernate: 
+    alter table if exists gallery_photos 
+       drop constraint if exists FK7svwduu2n1bucmxasj1r1v9qb
+Hibernate: 
+    alter table if exists otp_tokens 
+       drop constraint if exists FKjyk2kyj8ul2bjqjpentlrpyi1
+Hibernate: 
+    alter table if exists trip_members 
+       drop constraint if exists FKlrwxwvuaj3iddljvck3c3gtqr
+Hibernate: 
+    alter table if exists trip_members 
+       drop constraint if exists FK652lcpk0gdigjfm28bhgu24y2
+Hibernate: 
+    alter table if exists trips 
+       drop constraint if exists FKc4x3abgpcmxs8xcr9f238fpby
+Hibernate: 
+    drop table if exists app_content cascade
+Hibernate: 
+    drop table if exists expense_splits cascade
+Hibernate: 
+    drop table if exists expenses cascade
+Hibernate: 
+    drop table if exists gallery_photos cascade
+Hibernate: 
+    drop table if exists otp_tokens cascade
+Hibernate: 
+    drop table if exists trip_members cascade
+Hibernate: 
+    drop table if exists trips cascade
+Hibernate: 
+    drop table if exists user_buddies cascade
+Hibernate: 
+    drop table if exists users cascade
+Hibernate: 
+    create table app_content (
+        updated_at timestamp(6),
+        id uuid not null,
+        updated_by uuid,
+        section varchar(255) not null unique check (section in ('MISSION','ABOUT_US','SOCIAL_LINKS')),
+        content_json jsonb not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table expense_splits (
+        is_settled boolean,
+        split_amount numeric(10,2) not null,
+        settled_at timestamp(6),
+        expense_id uuid not null,
+        id uuid not null,
+        user_id uuid not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table expenses (
+        include_self boolean,
+        total_amount numeric(10,2) not null,
+        created_at timestamp(6),
+        updated_at timestamp(6),
+        id uuid not null,
+        paid_by uuid not null,
+        trip_id uuid not null,
+        title varchar(150) not null,
+        description TEXT,
+        primary key (id)
+    )
+Hibernate: 
+    create table gallery_photos (
+        is_featured boolean,
+        is_personal boolean not null,
+        created_at timestamp(6),
+        id uuid not null,
+        trip_id uuid,
+        uploaded_by uuid not null,
+        caption TEXT,
+        cloudinary_id varchar(255),
+        image_url varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table otp_tokens (
+        used boolean not null,
+        created_at timestamp(6),
+        expires_at timestamp(6) not null,
+        id uuid not null,
+        user_id uuid not null,
+        otp_hash varchar(255) not null,
+        purpose varchar(255) check (purpose in ('PASSWORD_RESET','EMAIL_VERIFY')),
+        primary key (id)
+    )
+Hibernate: 
+    create table trip_members (
+        joined_at timestamp(6),
+        id uuid not null,
+        trip_id uuid not null,
+        user_id uuid not null,
+        role varchar(255) check (role in ('ADMIN','MEMBER')),
+        primary key (id)
+    )
+Hibernate: 
+    create table trips (
+        end_date date,
+        start_date date,
+        created_at timestamp(6),
+        updated_at timestamp(6),
+        created_by uuid not null,
+        id uuid not null,
+        name varchar(150) not null,
+        banner_url varchar(255),
+        description TEXT,
+        status varchar(255) check (status in ('PLANNING','CONFIRMED','COMPLETED')),
+        primary key (id)
+    )
+Hibernate: 
+    create table user_buddies (
+        added_at timestamp(6),
+        buddy_id uuid not null,
+        id uuid not null,
+        user_id uuid not null,
+        primary key (id),
+        unique (user_id, buddy_id)
+    )
+Hibernate: 
+    create table users (
+        is_verified boolean,
+        created_at timestamp(6),
+        updated_at timestamp(6),
+        id uuid not null,
+        username varchar(50) not null unique,
+        full_name varchar(100) not null,
+        email varchar(150) not null unique,
+        avatar_url varchar(255),
+        bio TEXT,
+        password_hash varchar(255) not null,
+        role varchar(255) check (role in ('USER','ADMIN')),
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists app_content 
+       add constraint FKpm2mf7c4olhq77s788rrwdoeh 
+       foreign key (updated_by) 
+       references users
+Hibernate: 
+    alter table if exists expense_splits 
+       add constraint FKqigr3qe91wgifpl6mak0xcdso 
+       foreign key (expense_id) 
+       references expenses
+Hibernate: 
+    alter table if exists expense_splits 
+       add constraint FKnikv7drxxkj9x862du3r4ruam 
+       foreign key (user_id) 
+       references users
+Hibernate: 
+    alter table if exists expenses 
+       add constraint FKiwqbj8x69qhvj7a41f5r3xy10 
+       foreign key (paid_by) 
+       references users
+Hibernate: 
+    alter table if exists expenses 
+       add constraint FK9twvm79qw1voae3xgtn1xq5y9 
+       foreign key (trip_id) 
+       references trips
+Hibernate: 
+    alter table if exists gallery_photos 
+       add constraint FK36bnykhsad099re6emt3umv4 
+       foreign key (trip_id) 
+       references trips
+Hibernate: 
+    alter table if exists gallery_photos 
+       add constraint FK7svwduu2n1bucmxasj1r1v9qb 
+       foreign key (uploaded_by) 
+       references users
+Hibernate: 
+    alter table if exists otp_tokens 
+       add constraint FKjyk2kyj8ul2bjqjpentlrpyi1 
+       foreign key (user_id) 
+       references users
+Hibernate: 
+    alter table if exists trip_members 
+       add constraint FKlrwxwvuaj3iddljvck3c3gtqr 
+       foreign key (trip_id) 
+       references trips
+Hibernate: 
+    alter table if exists trip_members 
+       add constraint FK652lcpk0gdigjfm28bhgu24y2 
+       foreign key (user_id) 
+       references users
+Hibernate: 
+    alter table if exists trips 
+       add constraint FKc4x3abgpcmxs8xcr9f238fpby 
+       foreign key (created_by) 
+       references users
+2026-03-11T09:34:18.112+05:30  INFO 10282 --- [wandrr-backend] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11T09:34:18.188+05:30  INFO 10282 --- [wandrr-backend] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-11T09:34:18.573+05:30  WARN 10282 --- [wandrr-backend] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-11T09:34:18.660+05:30  INFO 10282 --- [wandrr-backend] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3ea9b180, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b9a2df7, org.springframework.security.web.context.SecurityContextHolderFilter@1fbe9d4, org.springframework.security.web.header.HeaderWriterFilter@1812ba7f, org.springframework.web.filter.CorsFilter@31725f55, org.springframework.security.web.authentication.logout.LogoutFilter@7bf4fa70, com.wandrr.security.JwtAuthFilter@148b13e5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f69937a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@717d3b2b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6797120c, org.springframework.security.web.session.SessionManagementFilter@2494847f, org.springframework.security.web.access.ExceptionTranslationFilter@703be135, org.springframework.security.web.access.intercept.AuthorizationFilter@3c6935ef]
+2026-03-11T09:34:18.736+05:30  INFO 10282 --- [wandrr-backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-03-11T09:34:18.740+05:30  INFO 10282 --- [wandrr-backend] [           main] com.wandrr.WandrrApplication             : Started WandrrApplication in 1.822 seconds (process running for 1.931)
+2026-03-11T09:34:39.368+05:30  INFO 10282 --- [wandrr-backend] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-11T09:34:39.368+05:30  INFO 10282 --- [wandrr-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-11T09:34:39.369+05:30  INFO 10282 --- [wandrr-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+Hibernate: 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.email=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+    fetch
+        first ? rows only
+2026-03-11T09:34:39.723+05:30  INFO 10282 --- [wandrr-backend] [nio-8080-exec-1] com.wandrr.modules.auth.AuthService      : New user registered: localtest2@example.com
+Hibernate: 
+    insert 
+    into
+        users
+        (avatar_url, bio, created_at, email, full_name, is_verified, password_hash, role, updated_at, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-03-11T11:53:28.678+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m9s812ms).
+2026-03-11T11:54:20.434+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51s757ms).
+2026-03-11T11:56:58.179+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m7s743ms).
+2026-03-11T11:57:57.498+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59s319ms).
+2026-03-11T12:00:48.338+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m36s491ms).
+2026-03-11T12:06:08.917+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m20s578ms).
+2026-03-11T12:34:47.126+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m8s140ms).
+2026-03-11T12:38:36.082+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m21s463ms).
+2026-03-11T12:40:34.972+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s827ms).
+2026-03-11T12:42:44.428+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m4s55ms).
+2026-03-11T12:45:02.791+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m48s357ms).
+2026-03-11T12:50:51.990+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m49s199ms).
+2026-03-11T12:53:08.490+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m16s485ms).
+2026-03-11T13:03:52.439+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m43s949ms).
+2026-03-11T13:06:15.170+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m16s46ms).
+2026-03-11T13:08:15.233+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m30s51ms).
+2026-03-11T13:09:46.370+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m1s133ms).
+2026-03-11T13:47:53.263+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m6s633ms).
+2026-03-11T13:50:08.944+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m45s680ms).
+2026-03-11T13:51:33.118+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m24s173ms).
+2026-03-11T13:53:01.644+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58s514ms).
+2026-03-11T13:54:34.188+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m32s545ms).
+2026-03-11T13:57:56.019+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m5s932ms).
+2026-03-11T14:11:12.249+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m16s199ms).
+2026-03-11T14:35:57.818+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m15s437ms).
+2026-03-11T14:36:50.510+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s693ms).
+2026-03-11T14:50:03.329+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m42s808ms).
+2026-03-11T15:49:05.725+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58m32s392ms).
+2026-03-11T15:50:54.667+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m18s933ms).
+2026-03-11T15:52:19.588+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s911ms).
+2026-03-11T15:53:44.478+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s879ms).
+2026-03-11T15:54:44.107+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59s630ms).
+2026-03-11T15:56:04.267+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50s152ms).
+2026-03-11T15:57:42.499+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m8s221ms).
+2026-03-11T16:01:51.174+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m38s672ms).
+2026-03-11T16:13:34.332+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m43s158ms).
+2026-03-11T16:25:42.503+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m38s162ms).
+2026-03-11T16:59:11.461+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=33m28s958ms).
+2026-03-11T17:00:30.776+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s316ms).
+2026-03-11T17:02:17.618+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m46s842ms).
+2026-03-11T17:04:20.088+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s959ms).
+2026-03-11T17:06:28.429+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m38s332ms).
+2026-03-11T17:07:40.170+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m11s741ms).
+2026-03-11T17:26:28.276+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m18s99ms).
+2026-03-11T17:56:30.181+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=29m31s908ms).
+2026-03-11T18:16:06.038+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m5s847ms).
+2026-03-11T18:17:39.419+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m33s381ms).
+2026-03-11T18:25:47.701+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m8s264ms).
+2026-03-11T18:27:29.605+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m41s904ms).
+2026-03-11T18:30:47.854+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m48s247ms).
+2026-03-11T18:32:05.556+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s696ms).
+2026-03-11T18:33:50.247+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m14s687ms).
+2026-03-11T18:47:17.835+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m52s803ms).
+2026-03-11T18:49:09.476+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m21s625ms).
+2026-03-11T18:50:07.668+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58s193ms).
+2026-03-11T19:28:32.115+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=37m54s440ms).
+2026-03-11T20:08:37.128+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=39m34s995ms).
+2026-03-11T20:25:37.660+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m30s414ms).
+2026-03-11T20:41:23.925+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m16s259ms).
+2026-03-11T20:58:11.199+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m47s275ms).
+2026-03-11T21:19:58.923+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21m47s724ms).
+2026-03-11T21:21:58.638+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m59s715ms).
+2026-03-11T21:23:18.894+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50s254ms).
+2026-03-11T21:39:14.878+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s984ms).
+2026-03-11T21:42:54.990+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m40s112ms).
+2026-03-11T21:43:49.556+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s566ms).
+2026-03-11T21:46:47.747+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m15s314ms).
+2026-03-11T21:47:47.504+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59s757ms).
+2026-03-11T21:53:41.440+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m23s926ms).
+2026-03-11T21:57:29.285+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m32s970ms).
+2026-03-11T22:31:07.807+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=33m38s522ms).
+2026-03-11T22:53:40.394+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m32s587ms).
+2026-03-11T22:55:08.863+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58s478ms).
+2026-03-11T22:56:37.768+05:30  WARN 10282 --- [wandrr-backend] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58s894ms).
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.email=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+    fetch
+        first ? rows only
+2026-03-11T23:57:09.903+05:30  INFO 10282 --- [wandrr-backend] [nio-8080-exec-1] com.wandrr.modules.auth.AuthService      : New user registered: demo_user@example.com
+Hibernate: 
+    insert 
+    into
+        users
+        (avatar_url, bio, created_at, email, full_name, is_verified, password_hash, role, updated_at, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        gp1_0.id,
+        gp1_0.caption,
+        gp1_0.cloudinary_id,
+        gp1_0.created_at,
+        gp1_0.image_url,
+        gp1_0.is_featured,
+        gp1_0.is_personal,
+        gp1_0.trip_id,
+        gp1_0.uploaded_by 
+    from
+        gallery_photos gp1_0 
+    left join
+        users ub1_0 
+            on ub1_0.id=gp1_0.uploaded_by 
+    where
+        ub1_0.id=? 
+        and gp1_0.is_personal 
+    order by
+        gp1_0.created_at desc
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.banner_url,
+        t1_0.created_at,
+        t1_0.created_by,
+        t1_0.description,
+        t1_0.end_date,
+        t1_0.name,
+        t1_0.start_date,
+        t1_0.status,
+        t1_0.updated_at 
+    from
+        trips t1_0 
+    join
+        trip_members m1_0 
+            on t1_0.id=m1_0.trip_id 
+    where
+        m1_0.user_id=? 
+    order by
+        t1_0.created_at desc
+Hibernate: 
+    select
+        count(distinct t1_0.id) 
+    from
+        trips t1_0 
+    join
+        trip_members m1_0 
+            on t1_0.id=m1_0.trip_id 
+    where
+        m1_0.user_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        count(ub1_0.id) 
+    from
+        user_buddies ub1_0 
+    where
+        ub1_0.user_id=?
+Hibernate: 
+    select
+        gp1_0.id,
+        gp1_0.caption,
+        gp1_0.cloudinary_id,
+        gp1_0.created_at,
+        gp1_0.image_url,
+        gp1_0.is_featured,
+        gp1_0.is_personal,
+        gp1_0.trip_id,
+        gp1_0.uploaded_by 
+    from
+        gallery_photos gp1_0 
+    left join
+        users ub1_0 
+            on ub1_0.id=gp1_0.uploaded_by 
+    where
+        ub1_0.id=? 
+        and gp1_0.is_personal 
+    order by
+        gp1_0.created_at desc
+Hibernate: 
+    select
+        count(distinct t1_0.id) 
+    from
+        trips t1_0 
+    join
+        trip_members m1_0 
+            on t1_0.id=m1_0.trip_id 
+    where
+        m1_0.user_id=? 
+        and (
+            t1_0.status='PLANNING' 
+            or t1_0.start_date>current_date
+        )
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        count(distinct t1_0.id) 
+    from
+        trips t1_0 
+    join
+        trip_members m1_0 
+            on t1_0.id=m1_0.trip_id 
+    where
+        m1_0.user_id=?
+Hibernate: 
+    select
+        count(ub1_0.id) 
+    from
+        user_buddies ub1_0 
+    where
+        ub1_0.user_id=?
+Hibernate: 
+    select
+        count(distinct t1_0.id) 
+    from
+        trips t1_0 
+    join
+        trip_members m1_0 
+            on t1_0.id=m1_0.trip_id 
+    where
+        m1_0.user_id=? 
+        and (
+            t1_0.status='PLANNING' 
+            or t1_0.start_date>current_date
+        )
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        ub1_0.id,
+        ub1_0.added_at,
+        ub1_0.buddy_id,
+        ub1_0.user_id 
+    from
+        user_buddies ub1_0 
+    where
+        ub1_0.user_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        ub1_0.id,
+        ub1_0.added_at,
+        ub1_0.buddy_id,
+        ub1_0.user_id 
+    from
+        user_buddies ub1_0 
+    where
+        ub1_0.user_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    insert 
+    into
+        trips
+        (banner_url, created_at, created_by, description, end_date, name, start_date, status, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        tm1_0.id 
+    from
+        trip_members tm1_0 
+    left join
+        trips t1_0 
+            on t1_0.id=tm1_0.trip_id 
+    left join
+        users u1_0 
+            on u1_0.id=tm1_0.user_id 
+    where
+        t1_0.id=? 
+        and u1_0.id=? 
+    fetch
+        first ? rows only
+2026-03-11T23:58:45.480+05:30  INFO 10282 --- [wandrr-backend] [nio-8080-exec-1] com.wandrr.modules.trips.TripService     : Trip created: Test Trip by demo_user@example.com
+Hibernate: 
+    insert 
+    into
+        trip_members
+        (joined_at, role, trip_id, user_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        ub1_0.id,
+        ub1_0.added_at,
+        ub1_0.buddy_id,
+        ub1_0.user_id 
+    from
+        user_buddies ub1_0 
+    where
+        ub1_0.user_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        ub1_0.id,
+        ub1_0.added_at,
+        ub1_0.buddy_id,
+        ub1_0.user_id 
+    from
+        user_buddies ub1_0 
+    where
+        ub1_0.user_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    insert 
+    into
+        trips
+        (banner_url, created_at, created_by, description, end_date, name, start_date, status, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        tm1_0.id 
+    from
+        trip_members tm1_0 
+    left join
+        trips t1_0 
+            on t1_0.id=tm1_0.trip_id 
+    left join
+        users u1_0 
+            on u1_0.id=tm1_0.user_id 
+    where
+        t1_0.id=? 
+        and u1_0.id=? 
+    fetch
+        first ? rows only
+2026-03-11T23:59:45.664+05:30  INFO 10282 --- [wandrr-backend] [nio-8080-exec-2] com.wandrr.modules.trips.TripService     : Trip created: Test Trip by demo_user@example.com
+Hibernate: 
+    insert 
+    into
+        trip_members
+        (joined_at, role, trip_id, user_id, id) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        count(distinct t1_0.id) 
+    from
+        trips t1_0 
+    join
+        trip_members m1_0 
+            on t1_0.id=m1_0.trip_id 
+    where
+        m1_0.user_id=?
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.banner_url,
+        t1_0.created_at,
+        t1_0.created_by,
+        t1_0.description,
+        t1_0.end_date,
+        t1_0.name,
+        t1_0.start_date,
+        t1_0.status,
+        t1_0.updated_at 
+    from
+        trips t1_0 
+    join
+        trip_members m1_0 
+            on t1_0.id=m1_0.trip_id 
+    where
+        m1_0.user_id=? 
+    order by
+        t1_0.created_at desc
+Hibernate: 
+    select
+        gp1_0.id,
+        gp1_0.caption,
+        gp1_0.cloudinary_id,
+        gp1_0.created_at,
+        gp1_0.image_url,
+        gp1_0.is_featured,
+        gp1_0.is_personal,
+        gp1_0.trip_id,
+        gp1_0.uploaded_by 
+    from
+        gallery_photos gp1_0 
+    left join
+        users ub1_0 
+            on ub1_0.id=gp1_0.uploaded_by 
+    where
+        ub1_0.id=? 
+        and gp1_0.is_personal 
+    order by
+        gp1_0.created_at desc
+Hibernate: 
+    select
+        count(ub1_0.id) 
+    from
+        user_buddies ub1_0 
+    where
+        ub1_0.user_id=?
+Hibernate: 
+    select
+        count(distinct t1_0.id) 
+    from
+        trips t1_0 
+    join
+        trip_members m1_0 
+            on t1_0.id=m1_0.trip_id 
+    where
+        m1_0.user_id=? 
+        and (
+            t1_0.status='PLANNING' 
+            or t1_0.start_date>current_date
+        )
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        gp1_0.id,
+        gp1_0.caption,
+        gp1_0.cloudinary_id,
+        gp1_0.created_at,
+        gp1_0.image_url,
+        gp1_0.is_featured,
+        gp1_0.is_personal,
+        gp1_0.trip_id,
+        gp1_0.uploaded_by 
+    from
+        gallery_photos gp1_0 
+    left join
+        users ub1_0 
+            on ub1_0.id=gp1_0.uploaded_by 
+    where
+        ub1_0.id=? 
+        and gp1_0.is_personal 
+    order by
+        gp1_0.created_at desc
+Hibernate: 
+    select
+        count(distinct t1_0.id) 
+    from
+        trips t1_0 
+    join
+        trip_members m1_0 
+            on t1_0.id=m1_0.trip_id 
+    where
+        m1_0.user_id=?
+Hibernate: 
+    select
+        count(ub1_0.id) 
+    from
+        user_buddies ub1_0 
+    where
+        ub1_0.user_id=?
+Hibernate: 
+    select
+        count(distinct t1_0.id) 
+    from
+        trips t1_0 
+    join
+        trip_members m1_0 
+            on t1_0.id=m1_0.trip_id 
+    where
+        m1_0.user_id=? 
+        and (
+            t1_0.status='PLANNING' 
+            or t1_0.start_date>current_date
+        )
+Hibernate: 
+    select
+        m1_0.trip_id,
+        m1_0.id,
+        m1_0.joined_at,
+        m1_0.role,
+        m1_0.user_id 
+    from
+        trip_members m1_0 
+    where
+        m1_0.trip_id=?
+Hibernate: 
+    select
+        m1_0.trip_id,
+        m1_0.id,
+        m1_0.joined_at,
+        m1_0.role,
+        m1_0.user_id 
+    from
+        trip_members m1_0 
+    where
+        m1_0.trip_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.email=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+    fetch
+        first ? rows only
+2026-03-12T00:13:28.770+05:30  INFO 10282 --- [wandrr-backend] [nio-8080-exec-7] com.wandrr.modules.auth.AuthService      : New user registered: demo_user2@example.com
+Hibernate: 
+    insert 
+    into
+        users
+        (avatar_url, bio, created_at, email, full_name, is_verified, password_hash, role, updated_at, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.email=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.avatar_url,
+        u1_0.bio,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_verified,
+        u1_0.password_hash,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-03-12T01:38:47.408+05:30 ERROR 10282 --- [wandrr-backend] [nio-8080-exec-3] c.w.exception.GlobalExceptionHandler     : Unexpected error
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/auth/signup.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at com.wandrr.security.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:34) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+2026-03-12T01:39:24.625+05:30 ERROR 10282 --- [wandrr-backend] [nio-8080-exec-2] c.w.exception.GlobalExceptionHandler     : Unexpected error
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/auth/signup.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at com.wandrr.security.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:34) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+Hibernate: 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.email=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+    fetch
+        first ? rows only
+2026-03-12T01:39:46.965+05:30  INFO 10282 --- [wandrr-backend] [nio-8080-exec-7] com.wandrr.modules.auth.AuthService      : New user registered: demo@wandrr.app
+Hibernate: 
+    insert 
+    into
+        users
+        (avatar_url, bio, created_at, email, full_name, is_verified, password_hash, role, updated_at, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-03-12T01:42:23.725+05:30  INFO 10282 --- [wandrr-backend] [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    alter table if exists app_content 
+       drop constraint if exists FKpm2mf7c4olhq77s788rrwdoeh
+Hibernate: 
+    alter table if exists expense_splits 
+       drop constraint if exists FKqigr3qe91wgifpl6mak0xcdso
+Hibernate: 
+    alter table if exists expense_splits 
+       drop constraint if exists FKnikv7drxxkj9x862du3r4ruam
+Hibernate: 
+    alter table if exists expenses 
+       drop constraint if exists FKiwqbj8x69qhvj7a41f5r3xy10
+Hibernate: 
+    alter table if exists expenses 
+       drop constraint if exists FK9twvm79qw1voae3xgtn1xq5y9
+Hibernate: 
+    alter table if exists gallery_photos 
+       drop constraint if exists FK36bnykhsad099re6emt3umv4
+Hibernate: 
+    alter table if exists gallery_photos 
+       drop constraint if exists FK7svwduu2n1bucmxasj1r1v9qb
+Hibernate: 
+    alter table if exists otp_tokens 
+       drop constraint if exists FKjyk2kyj8ul2bjqjpentlrpyi1
+Hibernate: 
+    alter table if exists trip_members 
+       drop constraint if exists FKlrwxwvuaj3iddljvck3c3gtqr
+Hibernate: 
+    alter table if exists trip_members 
+       drop constraint if exists FK652lcpk0gdigjfm28bhgu24y2
+Hibernate: 
+    alter table if exists trips 
+       drop constraint if exists FKc4x3abgpcmxs8xcr9f238fpby
+Hibernate: 
+    drop table if exists app_content cascade
+Hibernate: 
+    drop table if exists expense_splits cascade
+Hibernate: 
+    drop table if exists expenses cascade
+Hibernate: 
+    drop table if exists gallery_photos cascade
+Hibernate: 
+    drop table if exists otp_tokens cascade
+Hibernate: 
+    drop table if exists trip_members cascade
+Hibernate: 
+    drop table if exists trips cascade
+Hibernate: 
+    drop table if exists user_buddies cascade
+Hibernate: 
+    drop table if exists users cascade
+2026-03-12T01:42:23.741+05:30  INFO 10282 --- [wandrr-backend] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-12T01:42:23.741+05:30  INFO 10282 --- [wandrr-backend] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

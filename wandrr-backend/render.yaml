@@ -1,0 +1,37 @@
+databases:
+  - name: wandrr-db
+    plan: free
+    databaseName: wandrr_db
+    user: wandrr_user
+
+services:
+  - type: web
+    name: wandrr-backend
+    plan: free
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+      - key: SPRING_DATASOURCE_URL
+        fromDatabase:
+          name: wandrr-db
+          property: connectionString
+      - key: SPRING_DATASOURCE_USERNAME
+        fromDatabase:
+          name: wandrr-db
+          property: user
+      - key: SPRING_DATASOURCE_PASSWORD
+        fromDatabase:
+          name: wandrr-db
+          property: password
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_REFRESH_SECRET
+        generateValue: true
+      - key: CLIENT_URL
+        value: https://wandrr-production-app.web.app
+      - key: FROM_EMAIL
+        value: noreply@wandrr.app
+      - key: PORT
+        value: "8080"
