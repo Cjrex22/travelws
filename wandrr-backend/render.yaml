@@ -16,7 +16,7 @@ services:
       - key: SPRING_DATASOURCE_URL
         fromDatabase:
           name: wandrr-db
-          property: connectionString
+          property: internalConnectionString
       - key: SPRING_DATASOURCE_USERNAME
         fromDatabase:
           name: wandrr-db
